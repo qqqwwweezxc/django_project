@@ -3,6 +3,7 @@ from django.views.generic import TemplateView
 from django.http import HttpRequest, HttpResponse
 from typing import Any, Dict
 
+
 def home(request: HttpRequest) -> HttpResponse:
     """Render the home page."""
     return render(request, 'main/home.html')
